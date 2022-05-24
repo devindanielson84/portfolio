@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-image: linear-gradient(to bottom right,white, grey);
+        
+    }
+    .topnav {
+  overflow: hidden;
+  background-color:gray;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+.landing-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.leaves{
+  filter: opacity(90%);
+}
+.name{
+  font-size: 50px;
+  color: rgb(250, 229, 229);
+}
+.bio{
+  text-align: center;
+  list-style: none;
+}
+.images{
+display:flex;
+flex-direction:row;
+justify-content: space-evenly;
+margin-left: 100px;
+margin-bottom: 100px;
+}
+
+.images2{
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
+margin-left: 100px;
+margin-bottom: 100px;
+}
+
+.images3{
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
+margin-left: 100px;
+}
+
+input[type=button] {
+width: 200px;
+background-color: rgb(245, 245, 245);
+color: black;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-family: 'Roboto Mono', monospace;
+
+}
+
+input[type=button]:hover {
+background-color: lightgray;
+
+}
+</style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Devin Danielson</a>
+        <a href="#ProjectLibary">project libary</a>
+        <a href="#about">Information/About</a>
+        <p class="date">Date: <input type="text" id="datepicker"></p>
+      </div>
+      <div><img class="leaves" src="image1.jpeg" alt="leafs" height="700px" width="100%"></div>
+      <section id="landing">
+        <div class="landing-container">
+            <h1 class="name">Devin. Joaquin. Danielson</h1>
+        </div>
+    </section>
+      <div class="bio">
+        <h1>A Brief biography of who i am</h1>
+        <h3>starting from a very young age i was always very outgoing and spontainus in which at first led me to making alot of friends in  elementry then as time went on that outgoing adveturous personality of mine led me to discover new passions both in sports and in stem, it all started with flag football in which wasnt really my cup of tea and as i grew up, my passion for basketball was discovered as i started to play basketball i decided to try more clubs in which yet again led me to discover coding in which in all four years of highschool i fell in love with more and more until i decided to take this as a career, in which finally brings me to today where i continue to use my colorful personality and skills to continue to push forward in this codinf world. , Tolleson, AZ</h3>
+        <h2>my achievements/acolades</h2>
+        <ul class="bio">
+          <li>won 8th place in sports and entertainment management at the fbla state conference</li>
+          <li>won employee of the month at a retail store</li>
+        </ul>
+      </div>
+      <br>
+      <div class="images">
+          <div class="img-box">
+              <img class="img" src="globe.png" width= "200px" height= "200px"/>
+              <input type="button" value="jquery" onclick="window.open('https://devindanielson84.github.io/jQueryAnime/','_blank')">
+          </div>
+  
+          <div class="img-box">
+              <img class="img" src="maps.png" width= "200px" height= "200px"/>
+              <input type="button" value="maps"  onclick="window.open(' ','_blank')">
+          </div>
+  
+          <div class="img-box">
+              <img class="img" src="chart.png" width= "200px" height= "200px"/>
+              <input type="button" value="Ecommerce"  onclick="window.open(' https://devindanielson84.github.io/animeskateparkbootstrap/','_blank')">
+          </div>
+  
+          <div class="img-box">
+              <img class="img" src="tic.png" width= "200px" height= "200px"/>
+              <input type="button" value="tic tac Toe"  onclick="window.open(' https://devindanielson84.github.io/tic-tac-toe/','_blank')">
+          </div>
+      </div>
+  
+      <div class="images2">
+          <div class="img-box">
+              <img class="img" src="quiz.png" width= "200px" height= "200px"/>
+              <input type="button" value="quiz"  onclick="window.open('https://devindanielson84.github.io/quiz/','_blank')">
+          </div>
+          <div class="img-box">
+              <img class="img" src="page.png" width= "200px" height= "200px"/>
+              <input type="button" value="hosting plan"  onclick="window.open('https://devindanielson84.github.io/hosting_plan/','_blank')">
+          </div>
+  
+          <div class="img-box">
+              <img class="img" src="tree.png" width= "200px" height= "200px"/>
+              <input type="button" value="career tree"  onclick="window.open(' https://devindanielson84.github.io/career/','_blank')">
+          </div>
+          
+          <div class="img-box">
+              <img class="img" src="page.png" width= "200px" height= "200px"/>
+              <input type="button" value="landing page"  onclick="window.open(' https://devindanielson84.github.io/landingpage/','_blank')"> 
+          </div>
+      </div>
+  
+      <div class="images3">
+          <div class="img-box">
+              <img class="img" src="quiz.png" width= "200px" height= "200px"/>
+              <input type="button" value="form validation"  onclick="window.open('https://devindanielson84.github.io/formvalidation/','_blank')">
+          </div>
+          <div class="img-box">
+              <img class="img" src="page.png" width= "200px" height= "200px"/>
+              <input type="button" value="resume"  onclick="window.open('https://devindanielson84.github.io/main-/','_blank')">
+          </div>
+          <div class="img-box">
+              <img class="img" src="calendarpng.png" width= "200px" height= "200px"/>
+              <input type="button" value="Calendar"  onclick="window.open('','_blank')">
+          </div>
+          <div class="img-box">
+              <img class="img" src="calculator.png" width= "200px" height= "200px"/>
+              <input type="button" value="Tip Calculator"  onclick="window.open('https://devindanielson84.github.io/calculator/','_blank')">
+          </div>
+      </div>
+  
+</body>
+</html>
